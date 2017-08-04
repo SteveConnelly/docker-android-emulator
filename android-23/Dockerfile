@@ -1,4 +1,4 @@
-FROM softsam/android:latest
+FROM sc/android:latest
 
 MAINTAINER softsam
 
