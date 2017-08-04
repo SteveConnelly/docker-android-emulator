@@ -2,7 +2,7 @@
 android_arch=$ANDROID_ARCH
 if [ -z "$android_arch" ]
 then
-    android_arch="arm"
+    android_arch="x86"
 fi
 
 # Detect ip and forward ADB ports outside to outside interface
