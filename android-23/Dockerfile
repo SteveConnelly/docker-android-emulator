@@ -2,9 +2,6 @@ FROM sc/android:latest
 
 MAINTAINER softsam
 
-RUN apt-get update && \
-    apt-get install -y qemu-kvm libvirt-bin
-
 # Install dependencies for emulator
 RUN echo y | android update sdk --no-ui --all -t `android list sdk --no-ui --all|grep "SDK Platform Android 6.0, API 23"|awk -F'[^0-9]*' '{print $2}'` && \
     echo y | android update sdk --no-ui --all --filter sys-img-armeabi-v7a-android-23 --force && \
