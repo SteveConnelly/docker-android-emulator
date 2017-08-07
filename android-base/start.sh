@@ -1,5 +1,5 @@
 #!/bin/bash
-android_arch="arm"
+android_arch="x86"
 
 # Detect ip and forward ADB ports outside to outside interface
 ip=$(ip addr list eth0|grep "inet "|cut -d' ' -f6|cut -d/ -f1)
